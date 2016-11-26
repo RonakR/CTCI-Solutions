@@ -4,7 +4,7 @@ Implement an algorithm to determine if a string hsa all unique characters. What 
 structures?
 
 - is_unique_1 is my answer with a data structure
-- is_unique_2 is my final answer (w/out data structure)
+- is_unique_2 is my  answer w/out a data structure
 - is_unique_book is the answer from the book
 
 
