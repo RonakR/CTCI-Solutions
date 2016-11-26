@@ -18,8 +18,8 @@ structures?
   - ASCII or Unicode
 
 #### Example
-- `input: "TestString" output: false`
-- `input: "abcdefgh" output: true`
+- `input: "TestString" output: False`
+- `input: "abcdefgh" output: Rrue`
 
 #### Brute Force
 - Run through each character and compate to rest of the string O(N<sup>2</sup>)
