@@ -15,7 +15,7 @@ structures?
 - `input: "abcdefgh" output: true`
 
 #### Brute Force
-- Run through each character and compate to rest of the string O(N<sup>2<sup>)
+- Run through each character and compate to rest of the string O(N<sup>2</sup>)
 - Run through each character and store in hash table, if there is a collision it is not unique. Time: O(N) Space: O(N)
 
 #### Optimize
