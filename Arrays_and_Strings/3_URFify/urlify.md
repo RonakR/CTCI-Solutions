@@ -2,6 +2,11 @@
 
 Write a method to replace all spaces in a string with '%20'. You may assume that the string has sufficient space at the
 end to hold hte additional characters, and that you are given the "true" length of the string.
+
+- urlify_1 is my first attempt using some basic python string manipulation functions
+- urlify_2 is my final attempt, running through the string backwards, shifting non-spaces to the back of the string and
+replaces spaces with '%20'
+
 ## Steps to Solve Problem
 #### Listen
 - "string as sufficent space at the end to hold additional characters": Make the change in place
