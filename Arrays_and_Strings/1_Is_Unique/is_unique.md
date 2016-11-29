@@ -22,13 +22,13 @@ structures?
 - `input: "abcdefgh" output: Rrue`
 
 #### Brute Force
-- Run through each character and compate to rest of the string O(N<sup>2</sup>)
+- Run through each character and compare to rest of the string O(N<sup>2</sup>)
 - Run through each character and store in hash table, if there is a collision it is not unique. Time: O(N) Space: O(N)
 
 #### Optimize
 - Look for BUD
   - Remove hash table
-  - Sort string, O(N logN), walk through the string and compare adjacent values O(N) = O(N<sup>2</sup> logN)
+  - Sort string, O(N logN), walk through the string and compare adjacent values O(N) = O(N logN)
 
 #### Implement
 - Sort string
