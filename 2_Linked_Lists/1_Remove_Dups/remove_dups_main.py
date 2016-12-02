@@ -1,13 +1,18 @@
 from utilities.linked_list import Node
 from remove_dups_1 import remove_dups_1
+from remove_dups_2 import remove_dups_2
 
 def main():
-    soln_1_items_1 = [1,2,4,5,3,4,1,5,5,6]
-    soln_1_items_2 = ["aligator", "aardvark", "zebra", "zebra", "aardvark"]
+    items_1 = [1,2,4,5,3,4,1,1,5,5,6]
+    items_2 = ["alligator", "aardvark", "zebra", "zebra", "aardvark"]
 
     print "Solution 1: Run through list adding and comparing to a dictionary"
-    print "input: [1,2,4,5,3,4,1,5,5,6], output: {output}".format(output=remove_dups_1(createLinkedList(soln_1_items_1)))
-    print "input: ['aligator', 'aardvark', 'zebra', 'zebra', 'aardvark'], output: {output}\n".format(output=remove_dups_1(createLinkedList(soln_1_items_2)))
+    print "input: [1,2,4,5,3,4,1,5,5,6], output: {output}".format(output=remove_dups_1(createLinkedList(items_1)))
+    print "input: ['alligator', 'aardvark', 'zebra', 'zebra', 'aardvark'], output: {output}\n".format(output=remove_dups_1(createLinkedList(items_2)))
+
+    print "Solution 2: For each character, use a runner to run through the rest of the list"
+    print "input: [1,2,4,5,3,4,1,5,5,6], output: {output}".format(output=remove_dups_2(createLinkedList(items_1)))
+    print "input: ['alligator', 'aardvark', 'zebra', 'zebra', 'aardvark'], output: {output}\n".format(output=remove_dups_2(createLinkedList(items_2)))
 
 
 def createLinkedList(items):
