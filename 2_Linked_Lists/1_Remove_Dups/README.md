@@ -14,6 +14,7 @@ temporary buffer is not allowed?
 #### Example
 - `input: 4->1->2->4->4->5->3->6->3, output: 4->1->2->5->3->6`
 - `input: aligator->aardvark->zebra->aardvark, output: aligator->aardvark->zebra`
+
 #### Brute Force
 - For each item in list compare to rest of the items. Standard O(N<sup>2</sup>) soln.
 - Utilize hash table/dict. Run through list, if item's in dict remove the currect item from list, else add current item to dict. Time: O(N), Space: O(N)
