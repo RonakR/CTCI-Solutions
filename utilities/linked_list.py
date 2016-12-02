@@ -4,20 +4,19 @@ class Node:
         self.next = None
 
     def append(self, data):
-        nextNode = Node(data)
-        currentNode = self
+        next_node = Node(data)
+        current_node = self
 
-        while (currentNode.next is not None):
-            currentNode = currentNode.next
+        while (current_node.next is not None):
+            current_node = current_node.next
 
-        currentNode.next = nextNode
+        current_node.next = next_node
 
     def __str__(self):
-        currentNode = self
+        current_node = self
         retString = ""
-        while True:
-            retString += str(currentNode.data) + " "
-            currentNode = currentNode.next
-            if currentNode is None: break
+        while current_node is not None:
+            retString += str(current_node.data) + " "
+            current_node = current_node.next
 
         return retString
