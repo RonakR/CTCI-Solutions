@@ -18,9 +18,10 @@ replaces spaces with '%20'
 
 #### Brute Force
 - In Python strip > split(" "), '%20'.join lists. (Not in place)
+
 #### Optimize
 - Look for BUD
-    - Split list as is, run from back and move items to the back of list. On space insert '%20'. Big O(N)
+ - Split list as is, run from back and move items to the back of list. On space insert '%20'. Big O(N)
 
 #### Implement
 #### Walk Through
