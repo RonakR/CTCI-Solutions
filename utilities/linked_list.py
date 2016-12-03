@@ -1,7 +1,17 @@
 class Node:
-    def __init__(self, data):
+    def __init__(self, data, next=None):
         self.data = data
-        self.next = None
+        self.next = next
+
+    def __len__(self):
+        length = 0
+        current_node = self
+
+        while current_node is not None:
+            length+=1
+            current_node = current_node.next
+
+        return length
 
     def append(self, data):
         next_node = Node(data)
