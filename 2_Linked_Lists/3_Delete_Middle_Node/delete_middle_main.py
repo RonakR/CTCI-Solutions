@@ -1,5 +1,5 @@
-from utilities.linked_list import Node
 import random
+from utilities.linked_list import create_linked_list
 from delete_middle_1 import delete_middle_1
 
 def main():
@@ -12,15 +12,6 @@ def main():
     print "Solution 1: Replace contents of node with contents from the next node in the list."
     print "input: {input}, output: {output}".format(input=input_1,output=not delete_middle_1(input_1) or items_1)
     print "input: {input}, output: {output}\n".format(input=input_2,output=not delete_middle_1(input_2) or items_2)
-
-def create_linked_list(items):
-    if not items: return "Empty list."
-
-    head = Node(items[0])
-    for item in items[1:]:
-        head.append(item)
-
-    return head
 
 def get_random_node(head):
     index = random.randint(1, len(head)-1)

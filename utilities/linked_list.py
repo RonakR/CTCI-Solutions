@@ -30,3 +30,12 @@ class Node:
             current_node = current_node.next
 
         return retString
+
+def create_linked_list(items):
+    if not items: return "Empty list."
+
+    head = Node(items[0])
+    for item in items[1:]:
+        head.append(item)
+
+    return head
