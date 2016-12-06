@@ -22,12 +22,22 @@ class Node:
 
         current_node.next = next_node
 
+    def append_full_node(self, node):
+        current_node = self
+
+        while (current_node.next is not None):
+            current_node = current_node.next
+
+        current_node.next = node
+
     def __str__(self):
+        max = 30
         current_node = self
         retString = ""
-        while current_node is not None:
+        while current_node is not None and max:
             retString += str(current_node.data) + " "
             current_node = current_node.next
+            max-=1
 
         return retString
 
