@@ -14,10 +14,9 @@ Circular linked list: A (corrupt) linked list in which a node's next pointer poi
 - `input: A->B->C->D->E->F, output: False`
 
 #### Brute Force
-- Run through list, add each node to hashmap with the value of node.next. Time: O(N), Space: O(N)
- - If a node.data is in the hashmap, check if the node.next is similar
- - If a node.data is in the hashmap but node.next is not similar, add the node as entry to hashmap.
- - If node.data doesn't match anything in the hashmap, keep moving
+- Run through list, add each node to hashmap. Time: O(N), Space: O(N)
+ - If the current node is in the hashmap, circular node found
+ - If node doesn't match anything in the hashmap, add this node and keep moving
  
 #### Optimize
 - Look for BUD
