@@ -7,7 +7,7 @@ def main():
     items_2 = create_linked_list([12, 13, 14])
 
 
-    print "Solution 1: Run through both lists, compare where nodes start being simmilar."
+    print "Solution 1: Run through both lists, compare where nodes start being similar."
     print "input: {input_1}, {input_2}, output: {output}".format(input_1=items_1, input_2=items_2,output=intersection_1(items_1, items_2))
     items_2.next.next.next = items_1.next.next.next
     print "input: {input_1}, {input_2}, output: {output}".format(input_1=items_1, input_2=items_2,output=intersection_1(items_1, items_2))
