@@ -1,6 +1,6 @@
-def remove_dups_2(head):
-    current_node = head
-    runner_node = head
+def remove_dups_2(ll):
+    current_node = ll.head
+    runner_node = ll.head
 
     while current_node is not None:
         while runner_node.next is not None:
@@ -11,6 +11,6 @@ def remove_dups_2(head):
         current_node = current_node.next
         runner_node = current_node
 
-    return head
+    return ll
 
 
