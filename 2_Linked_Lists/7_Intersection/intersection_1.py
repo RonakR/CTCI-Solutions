@@ -1,12 +1,13 @@
 def intersection_1(firstll, secondll):
     diff = len(firstll) - len(secondll)
+    headfll, headsll = firstll.head, secondll.head
 
     if diff > 0:
-        firstll = fix_length(firstll, diff)
+        headfll = fix_length(headfll, diff)
     elif diff < 0:
-        secondll = fix_length(secondll, abs(diff))
+        headfll = fix_length(headsll, abs(diff))
 
-    return find_intersection(firstll, secondll)
+    return find_intersection(headfll, headsll)
 
 def fix_length(ll, diff):
     while diff:
@@ -14,17 +15,17 @@ def fix_length(ll, diff):
         diff -= 1
     return ll
 
-def find_intersection(firstll, secondll):
+def find_intersection(headfll, headsll):
     intersection = False
 
-    currentfll = firstll
-    currentsll = secondll
+    currentfll = headfll
+    currentsll = headsll
 
     while currentfll is not None:
         if not intersection:
-            if currentfll.data is not currentsll.data or currentfll.next is not currentsll.next:
+            if currentfll is not currentsll:
                 intersection = False
-        if not intersection and (currentfll.data == currentsll.data and currentfll.next == currentsll.next):
+        if not intersection and (currentfll == currentsll):
             intersection = currentfll
 
         currentfll = currentfll.next
