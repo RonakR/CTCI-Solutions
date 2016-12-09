@@ -1,6 +1,6 @@
 def loop_detection_1(ll):
     appearances = {}
-    current_node = ll
+    current_node = ll.head
     circular_node = False
 
     while current_node is not None and circular_node is False:

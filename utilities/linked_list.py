@@ -1,3 +1,4 @@
+import random
 from utilities.node import Node
 
 class LinkedList:
@@ -50,3 +51,11 @@ def create_linked_list(items):
         head.append(item)
 
     return head
+
+def get_random_node(ll):
+    index = random.randint(1, len(ll)-1)
+    current_node = ll.head
+    for i in range(index):
+        current_node = current_node.next
+
+    return current_node
