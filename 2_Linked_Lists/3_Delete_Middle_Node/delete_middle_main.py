@@ -13,9 +13,9 @@ def main():
     print "input: {input}, output: {output}".format(input=input_1,output=not delete_middle_1(input_1) or items_1)
     print "input: {input}, output: {output}\n".format(input=input_2,output=not delete_middle_1(input_2) or items_2)
 
-def get_random_node(head):
-    index = random.randint(1, len(head)-1)
-    current_node = head
+def get_random_node(ll):
+    index = random.randint(1, len(ll)-1)
+    current_node = ll.head
     for i in range(index):
         current_node = current_node.next
 
