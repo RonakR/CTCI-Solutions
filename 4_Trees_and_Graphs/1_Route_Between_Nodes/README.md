@@ -12,7 +12,7 @@ Given a directed graph, design an algorithm to find out whether there is a route
 
 #### Example
 - input params: Graph, nodeOne, nodeTwo
-- `input: {a:[b,f], b:[d], c:[b], d:[a], e:[a], f:[e]}, a, c output: True`
+- `input: {'a': ['b', 'f'], 'c': ['b'], 'b': ['d'], 'e': ['a'], 'd': ['a'], 'f': ['e']}, 'a', 'c' output: True`
 
 #### Brute Force
 - BFS from nodeOne to nodeTwo, unmark all marked nodes, BFS from nodeTwo to nodeOne
